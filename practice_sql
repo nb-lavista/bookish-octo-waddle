@@ -1,0 +1,8 @@
+https://www.analystbuilder.com/questions/company-wide-increase-TytwW?r=J7gqnorKoaz3H7lgpWaz8zXuq
+SELECT *,
+  round(CASE 
+    WHEN pay_level = 1 then salary * 1.1
+    WHEN pay_level = 2 then salary * 1.15
+    WHEN pay_level = 3 then salary * 3
+  end)as new_salary
+FROM employees
