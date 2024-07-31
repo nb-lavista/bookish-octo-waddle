@@ -6,3 +6,9 @@ SELECT *,
     WHEN pay_level = 3 then salary * 3
   end)as new_salary
 FROM employees
+
+
+https://www.analystbuilder.com/questions/bike-price-zKcOR
+SELECT round(avg(bike_price),2)
+FROM inventory
+where bike_price != "NULL" and bike_sold = "Y"
